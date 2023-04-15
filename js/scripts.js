@@ -17,9 +17,7 @@ fetch('https://digimon-api.vercel.app/api/digimon')
         console.log(datos)
         for (let temp of datos) {
             tabla(temp)
-            // if(temp.id == 10){
-            //     break
-            // }
+            
         }
     })
 
