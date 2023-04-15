@@ -1,0 +1,73 @@
+:root{
+    --fuenteHeadings: 'Bangers', cursive;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+h1,h2,h3,h4,h5,p{
+    font-family: var(--fuenteHeadings);
+}
+
+.navbar__bg{
+    background-color: #f37f20;
+}
+
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carta{
+width: 200px;
+margin: 0 auto;
+}
+
+.carta__zoom:hover{
+    transform: scale(1.3);
+    transition: 0.3s;
+    z-index: 1;
+}
+
+
+
+@media (max-width:420px){
+    .cuadricula{
+        display: grid;
+        gap: 10px;
+    }
+}
+
+@media (min-width:440px){
+    .cuadricula{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+@media (min-width:660px){
+    .cuadricula{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+
+@media (min-width:880px){
+.cuadricula{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+}
+
